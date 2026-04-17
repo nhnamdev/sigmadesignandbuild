@@ -60,26 +60,26 @@ export const services = [
     body:
       "Increase the number of units within your current property and unlock more rental income from the same lot.",
     image:
-      "https://plexcon.ca/wp-content/uploads/2024/05/comparison-of-apartment-before-and-after-renovatio-2023-11-27-05-15-49-utc.webp"
+      "image/info.jpg"
   },
   {
     title: "Commercial To Multi-Family Residential Conversion",
     body:
       "Convert underused commercial space into high-demand housing with permits, planning and execution handled end to end.",
     image:
-      "https://plexcon.ca/wp-content/uploads/2024/05/drawingplexcon-1024x501.webp"
+      "image/info.jpg"
   },
   {
     title: "Laneway & Garden Suite",
     body:
       "Optimize your lot by adding a well-designed secondary dwelling in the rear yard or laneway access area.",
-    image: "https://plexcon.ca/wp-content/uploads/2024/05/122.webp"
+    image: "image/info.jpg"
   },
   {
     title: "Renovations & Additions",
     body:
       "Upgrade the value and performance of your property with strategic additions, structural work and interior renovation.",
-    image: "https://plexcon.ca/wp-content/uploads/2024/06/351354.webp"
+    image: "image/info.jpg"
   }
 ];
 

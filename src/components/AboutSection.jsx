@@ -27,7 +27,7 @@ export default function AboutSection() {
         </div>
         <div className="about-media">
           <img
-            src="https://plexcon.ca/wp-content/uploads/2024/07/plexcon_sampleimageforvideo.webp"
+            src="image/info.jpg"
             alt="Model rendering"
           />
         </div>
