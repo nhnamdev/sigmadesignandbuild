@@ -50,7 +50,9 @@ export const impactStats = [
 
 export const heroSlides = [
   { image: "/image/herosection.jpg", alt: "Sigma project exterior" },
-  { image: "/image/herosection2.jpg", alt: "Sigma construction team vehicle" },
+  { image: "/https://www.cloud-awards.com/wp-content/uploads/2024/09/AdobeStock_743870142-1200x537.jpeg", alt: "Sigma construction team vehicle" },
+    { image: "https://3bdesign.vn/wp-content/uploads/2022/11/thiet-ke-noi-that-biet-thu-hien-dai-dep-6.jpg", alt: "Sigma construction team vehicle" },
+      { image: "https://nhadepshouse.com/hinh-anh/cate/trg-17719173872283.webp", alt: "Sigma construction team vehicle" },
   
 ];
 
@@ -60,26 +62,26 @@ export const services = [
     body:
       "Increase the number of units within your current property and unlock more rental income from the same lot.",
     image:
-      "image/info.jpg"
+      "https://www.drfbuilders.com/wp-content/uploads/2019/05/design_build_construction.jpg"
   },
   {
     title: "Commercial To Multi-Family Residential Conversion",
     body:
       "Convert underused commercial space into high-demand housing with permits, planning and execution handled end to end.",
     image:
-      "image/info.jpg"
+      "https://www.cloud-awards.com/wp-content/uploads/2024/09/AdobeStock_743870142-1200x537.jpeg"
   },
   {
     title: "Laneway & Garden Suite",
     body:
       "Optimize your lot by adding a well-designed secondary dwelling in the rear yard or laneway access area.",
-    image: "image/info.jpg"
+    image: "https://3bdesign.vn/wp-content/uploads/2022/11/thiet-ke-noi-that-biet-thu-hien-dai-dep-6.jpg"
   },
   {
     title: "Renovations & Additions",
     body:
       "Upgrade the value and performance of your property with strategic additions, structural work and interior renovation.",
-    image: "image/info.jpg"
+    image: "https://nhadepshouse.com/hinh-anh/cate/trg-17719173872283.webp"
   }
 ];
 
