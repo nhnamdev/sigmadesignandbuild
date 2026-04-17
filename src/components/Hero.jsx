@@ -35,7 +35,7 @@ export default function Hero() {
             ))}
           </div>
           <div className="units-badge">
-            <strong>143</strong>
+            <strong>116</strong>
             <span>Units Converted</span>
           </div>
         </div>
