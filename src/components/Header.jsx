@@ -9,8 +9,8 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <a className="brand" href="#top">
-          <span className="brand-mark" />
-          <span>Sigma Design &amp; Build</span>
+          <img className="brand-mark" src="/logo/logo-xoaphong.png" alt="Sigma Design & Build logo" />
+          {/* <span>Sigma Design &amp; Build</span> */}
         </a>
 
         <nav className={`nav ${isOpen ? "open" : ""}`} id="nav">
