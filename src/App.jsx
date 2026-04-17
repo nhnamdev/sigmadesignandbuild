@@ -7,7 +7,7 @@ import ServicesSection from "./components/ServicesSection";
 import AboutSection from "./components/AboutSection";
 import AreasSection from "./components/AreasSection";
 import FaqSection from "./components/FaqSection";
-import ProjectsSection from "./components/ProjectsSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
         <AboutSection />
         <AreasSection />
         <FaqSection />
-        <ProjectsSection />
+        <TestimonialsSection />
       </main>
       <Footer />
     </>

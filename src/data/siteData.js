@@ -16,7 +16,6 @@ export const contactInfo = [
 export const navItems = [
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" }
 ];
@@ -140,24 +139,24 @@ export const faqItems = [
   }
 ];
 
-export const projects = [
+export const testimonials = [
   {
-    tag: "Laneway Suite",
-    title: "Dovercourt Village 2-Storey Laneway Suite",
-    image:
-      "https://plexcon.ca/wp-content/uploads/2026/03/St-Clarens-GS-Render-Horizontal-scaled.png"
+    quote:
+      "The team handled design coordination, permits, and construction without the usual back-and-forth. The job moved on schedule and the finished units came out exactly how we needed.",
+    name: "Mark D.",
+    role: "Multiplex Conversion Client"
   },
   {
-    tag: "Garden Suite",
-    title: "Oakwood Top-Up + Rear Suite",
-    image:
-      "https://plexcon.ca/wp-content/uploads/2025/07/hf_20260220_145306_28445e3a-8784-4af6-bce7-2b10b0b8fdf0-scaled.jpeg"
+    quote:
+      "We needed a builder who understood both the city process and the investment side. Sigma kept the project organized, solved issues quickly on site, and protected the budget.",
+    name: "Sarah L.",
+    role: "Top-Up And Addition Client"
   },
   {
-    tag: "Fourplex",
-    title: "Oakwood 4-Plex Two-Storey Top-Up",
-    image:
-      "https://plexcon.ca/wp-content/uploads/2026/02/228-Robina-Blog-Cover-Render.png"
+    quote:
+      "Communication was clear from planning through turnover. The workmanship was solid, the timeline was realistic, and the added suite increased the value of the property immediately.",
+    name: "Jason R.",
+    role: "Garden Suite Client"
   }
 ];
 
