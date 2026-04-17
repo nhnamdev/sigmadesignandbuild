@@ -51,16 +51,7 @@ export const impactStats = [
 export const heroSlides = [
   { image: "/image/herosection.jpg", alt: "Sigma project exterior" },
   { image: "/image/herosection2.jpg", alt: "Sigma construction team vehicle" },
-  {
-    image:
-      "https://plexcon.ca/wp-content/uploads/2025/08/vert_completed_billboard.webp",
-    alt: "Completed multiplex project"
-  },
-  {
-    image:
-      "https://plexcon.ca/wp-content/uploads/2024/07/plexcon_sampleimageforvideo.webp",
-    alt: "Architectural rendering"
-  }
+  
 ];
 
 export const services = [
