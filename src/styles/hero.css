@@ -80,7 +80,7 @@
 @keyframes hero-fade {
   0%,
   20% {
-    opacity: 0;
+    opacity: 1;
   }
 
   25%,
