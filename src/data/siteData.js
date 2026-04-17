@@ -21,30 +21,6 @@ export const navItems = [
   { label: "Contact", href: "#contact" }
 ];
 
-export const seenOnItems = [
-  {
-    name: "blogTO",
-    href: "https://www.blogto.com/sponsored/2025/08/toronto-multiplex-conversion-plexcon-construction/",
-    image:
-      "https://plexcon.ca/wp-content/uploads/2025/08/blogTO-Logo-Horizontal-RGB-e1759437188563.webp"
-  },
-  {
-    name: "Storeys",
-    href: "https://storeys.com/plexcon-construction-missing-middle-gta/",
-    image: "https://plexcon.ca/wp-content/uploads/2025/09/storeyslogo.webp"
-  },
-  {
-    name: "Daily Hive",
-    href: "https://dailyhive.com/toronto/toronto-multiplex-conversion-plexcon-construction",
-    image: "https://plexcon.ca/wp-content/uploads/2025/08/latest.webp"
-  },
-  {
-    name: "RENX",
-    href: "https://renxhomes.ca/toronto-multiplex-conversion-plexcon-construction",
-    image:
-      "https://plexcon.ca/wp-content/uploads/2025/08/srm4klxr6euknksgygp6-e1756496724450.webp"
-  }
-];
 
 export const heroSlides = [
   { image: "/image/herosection.jpg", alt: "Sigma project exterior" },
