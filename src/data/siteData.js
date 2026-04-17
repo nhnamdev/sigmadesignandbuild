@@ -21,6 +21,33 @@ export const navItems = [
   { label: "Contact", href: "#contact" }
 ];
 
+export const impactStats = [
+  {
+    value: "15+",
+    label: "Years Experience",
+    body:
+      "Hands-on residential construction experience across multiplex, addition, and renovation work."
+  },
+  {
+    value: "100%",
+    label: "On-Time Focus",
+    body:
+      "Tight scheduling, trade coordination, and site management keep milestones moving cleanly."
+  },
+  {
+    value: "20+",
+    label: "Projects Delivered",
+    body:
+      "Completed across conversions, top-ups, laneway suites, and value-driven residential upgrades."
+  },
+  {
+    value: "30%",
+    label: "Typical ROI Uplift",
+    body:
+      "Planning and build decisions aimed at stronger resale value and healthier rental income."
+  }
+];
+
 
 export const heroSlides = [
   { image: "/image/herosection.jpg", alt: "Sigma project exterior" },

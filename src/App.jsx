@@ -1,6 +1,7 @@
 import TopBar from "./components/TopBar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import StatsSection from "./components/StatsSection";
 import VideoSection from "./components/VideoSection";
 import ServicesSection from "./components/ServicesSection";
 import AboutSection from "./components/AboutSection";
@@ -16,6 +17,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <StatsSection />
         <VideoSection />
         <ServicesSection />
         <AboutSection />
