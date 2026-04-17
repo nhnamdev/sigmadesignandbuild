@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Geometos";
+  src: url("https://plexcon.ca/wp-content/uploads/2024/05/Geometos.ttf")
+    format("truetype");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Basis Grotesque";
+  src: url("https://plexcon.ca/wp-content/uploads/2024/05/BASISGROTESQUEPRO-REGULAR.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Basis Grotesque";
+  src: url("https://plexcon.ca/wp-content/uploads/2024/05/BASISGROTESQUEPRO-BOLD.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+:root {
+  --color-primary: rgba(42, 48, 60, 1);
+  --color-primary-soft: rgba(42, 48, 60, 0.82);
+  --color-accent: #d4af67;
+  --color-accent-soft: #e7d2a3;
+  --color-accent-line: rgba(212, 175, 103, 0.3);
+  --color-text: #5d6674;
+  --color-text-strong: #1d212a;
+  --color-surface: #fcfbf7;
+  --color-surface-alt: #ffffff;
+  --color-line: rgba(42, 48, 60, 0.08);
+  --shadow-lg: 0 18px 48px rgba(18, 22, 29, 0.16);
+  --shadow-md: 0 12px 30px rgba(18, 22, 29, 0.12);
+  --radius-xl: 42px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --max-width: 1140px;
+}

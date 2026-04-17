@@ -1,0 +1,50 @@
+.dark-band {
+  background:
+    linear-gradient(rgba(24, 28, 37, 0.95), rgba(24, 28, 37, 0.95)),
+    url("/image/hinhmo.jpg") center / cover no-repeat;
+}
+
+.dark-title {
+  color: #fff;
+}
+
+.dark-copy {
+  max-width: 880px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px 24px;
+  margin: 24px 0 28px;
+}
+
+.areas-grid div {
+  position: relative;
+  padding-left: 16px;
+  color: var(--color-accent-soft);
+}
+
+.areas-grid div::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+}
