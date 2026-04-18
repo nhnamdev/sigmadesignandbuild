@@ -69,19 +69,19 @@ export const services = [
     body:
       "Convert underused commercial space into high-demand housing with permits, planning and execution handled end to end.",
     image:
-      "/image/2.jpg"  
+      "/image/4.jpg"  
   },
   {
     title: "Laneway & Garden Suite",
     body:
       "Optimize your lot by adding a well-designed secondary dwelling in the rear yard or laneway access area.",
-    image: "/image/3.jpg"
+    image: "/image/2.jpg"
   },
   {
     title: "Renovations & Additions",
     body:
       "Upgrade the value and performance of your property with strategic additions, structural work and interior renovation.",
-    image: "/image/4.jpg"
+    image: "/image/3.jpg"
   }
 ];
 
