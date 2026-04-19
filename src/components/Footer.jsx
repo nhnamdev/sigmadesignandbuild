@@ -1,8 +1,94 @@
+import { useState } from "react";
 import ContactCards from "./ContactCards";
 import { contactInfo, footerLinks } from "../data/siteData";
 import "../styles/footer.css";
 
 export default function Footer() {
+  const [formData, setFormData] = useState({
+    name: "",
+    city: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+  const [submitState, setSubmitState] = useState({
+    status: "idle",
+    message: ""
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setFormData((current) => ({
+      ...current,
+      [name]: value
+    }));
+  }
+
+  async function parseResponse(response) {
+    const rawText = await response.text();
+    const contentType = response.headers.get("content-type") || "";
+    const isJson = contentType.includes("application/json");
+
+    if (!rawText) {
+      return {};
+    }
+
+    if (isJson) {
+      try {
+        return JSON.parse(rawText);
+      } catch {
+        throw new Error("The contact endpoint returned invalid JSON.");
+      }
+    }
+
+    if (rawText.includes("<!DOCTYPE html") || rawText.includes("<html")) {
+      throw new Error("The contact endpoint is not available on this deployment yet.");
+    }
+
+    return { error: rawText };
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setSubmitState({ status: "loading", message: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+      const payload = await parseResponse(response);
+
+      if (!response.ok) {
+        throw new Error(
+          payload.error || `Could not send your message. Server returned ${response.status}.`
+        );
+      }
+
+      setSubmitState({
+        status: "success",
+        message: payload.message || "Your message has been sent successfully."
+      });
+      setFormData({
+        name: "",
+        city: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+    } catch (error) {
+      setSubmitState({
+        status: "error",
+        message: error.message || "Could not send your message."
+      });
+    }
+  }
+
   return (
     <footer className="footer-cta-wrap" id="contact">
       <div className="container">
@@ -23,15 +109,68 @@ export default function Footer() {
             </div>
             <div className="form-card">
               <h3>Get In Touch</h3>
-              <form className="form-grid">
-                <input type="text" placeholder="Full Name" />
-                <input type="text" placeholder="City" />
-                <input type="email" placeholder="Email" />
-                <input type="tel" placeholder="Phone" />
-                <textarea placeholder="Message" />
-                <button className="btn form-submit" type="submit">
-                  Send
+              <form className="form-grid" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  maxLength="120"
+                  required
+                />
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="City"
+                  value={formData.city}
+                  onChange={handleChange}
+                  maxLength="120"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  maxLength="40"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  minLength="10"
+                  maxLength="3000"
+                  required
+                />
+                <button
+                  className="btn form-submit"
+                  type="submit"
+                  disabled={submitState.status === "loading"}
+                >
+                  {submitState.status === "loading" ? "Sending..." : "Send"}
                 </button>
+                <p
+                  className={`form-status ${submitState.status}`}
+                  aria-live="polite"
+                  role="status"
+                >
+                  {submitState.message}
+                </p>
+                <p className="form-note">
+                  Messages are sent directly to our inbox and we reply by email.
+                </p>
               </form>
             </div>
           </div>

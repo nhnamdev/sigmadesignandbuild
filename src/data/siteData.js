@@ -2,8 +2,8 @@ export const contactInfo = [
   { label: "Phone", value: "+1 (647) 928-8838", href: "tel:+16479288838" },
   {
     label: "Email",
-    value: "sigmadesignandbuild@gmail.com",
-    href: "mailto:sigmadesignandbuild@gmail.com"
+    value: "info@sigmadnb.ca",
+    href: "mailto:info@sigmadnb.ca"
   },
   {
     label: "Website",
