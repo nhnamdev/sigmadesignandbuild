@@ -7,8 +7,8 @@ export const contactInfo = [
   },
   {
     label: "Website",
-    value: "www.sigmadesignbuild.ca",
-    href: "https://www.sigmadesignbuild.ca"
+    value: "https://sigmadnb.ca/",
+    href: "https://sigmadnb.ca/"
   },
   { label: "Location", value: "Toronto, ON, CA", href: "#" }
 ];

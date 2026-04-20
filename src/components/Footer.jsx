@@ -212,8 +212,7 @@ export default function Footer() {
             <div className="footer-col">
               <h4>Service Areas</h4>
               <p>
-                East Danforth, Liberty Village, Trinity-Bellwoods, Parkdale,
-                Rosedale, East York, York, Leslieville.
+                Toronto and the GTA.
               </p>
             </div>
           </div>
