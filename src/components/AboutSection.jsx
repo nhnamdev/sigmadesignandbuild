@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section className="section" id="about">
       <div className="container about-grid">
-        {/* <div>
+        {/* <div className="about-content">
           <div className="eyebrow">Who We Are</div>
           <h2 className="display section-title">
             Expert Craftsmanship With The Investor&apos;s Budget In Mind.

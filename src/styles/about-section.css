@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.about-content {
+  min-width: 0;
+}
+
+.about-media {
+  min-width: 0;
+}
+
 .about-media img {
   width: 100%;
   border-radius: 0 48px 0 48px;
@@ -14,5 +22,15 @@
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .about-content {
+    order: 1;
+  }
+
+  .about-media {
+    order: 2;
   }
 }
