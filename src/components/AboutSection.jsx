@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section className="section" id="about">
       <div className="container about-grid">
-        <div>
+        {/* <div>
           <div className="eyebrow">Who We Are</div>
           <h2 className="display section-title">
             Expert Craftsmanship With The Investor&apos;s Budget In Mind.
@@ -24,7 +24,7 @@ export default function AboutSection() {
           <a className="btn" href="#contact">
             Book Appointment
           </a>
-        </div>
+        </div> */}
         <div className="about-media">
           <img
             src="image/info.jpg"

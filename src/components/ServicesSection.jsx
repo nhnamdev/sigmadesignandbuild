@@ -4,7 +4,7 @@ import "../styles/services-section.css";
 export default function ServicesSection() {
   return (
     <section className="section services-section" id="services">
-      <div className="container">
+      {/* <div className="container">
         <div className="service-grid">
           {services.map((service) => (
             <article
@@ -22,7 +22,7 @@ export default function ServicesSection() {
             </article>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -95,7 +95,7 @@ export default function Footer() {
         <div className="footer-cta-card">
           <div className="footer-cta">
             <div>
-              <div className="eyebrow">Invest In Multi-Family Homes</div>
+              {/* <div className="eyebrow">Invest In Multi-Family Homes</div> */}
               <h2 className="display">
                 Build More Value Into The Same Property.
               </h2>
@@ -180,10 +180,10 @@ export default function Footer() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="footer-logo">Sigma Design &amp; Build</div>
-              <p>
+              {/* <p>
                 Multiplex conversions, renovations, additions, and design-build
                 delivery for urban residential properties.
-              </p>
+              </p> */}
             </div>
 
             <div className="footer-col">
