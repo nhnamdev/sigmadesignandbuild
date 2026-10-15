@@ -7,19 +7,21 @@
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 620px);
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 520px);
   gap: 40px;
   align-items: center;
 }
 
 .hero-card {
+  position: relative;
+  z-index: 2;
   max-width: 620px;
 }
 
 .hero-title {
   margin-bottom: 22px;
   color: var(--color-text-strong);
-  font-size: clamp(3rem, 7vw, 5.7rem);
+  font-size: clamp(2.4rem, 4.4vw, 4.2rem);
 }
 
 .hero-text {
