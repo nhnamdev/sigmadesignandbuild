@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import TopBar from "./components/TopBar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import VideoSection from "./components/VideoSection";
 import StatsSection from "./components/StatsSection";
 import ServicesSection from "./components/ServicesSection";
 import AboutSection from "./components/AboutSection";
@@ -90,6 +91,7 @@ export default function App() {
         ) : (
           <>
             <Hero />
+            <VideoSection />
             <StatsSection />
             <ServicesSection onSelectService={handleSelectService} />
             <AboutSection />
