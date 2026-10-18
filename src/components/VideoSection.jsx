@@ -29,12 +29,14 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <section className="section">
-      <div className="container video-wrap">
-        <video ref={videoRef} controls muted playsInline preload="metadata">
-          <source src="/video/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <section className="section video-section">
+      <div className="container video-portrait-shell">
+        <div className="video-portrait-frame">
+          <video ref={videoRef} controls muted playsInline preload="metadata">
+            <source src="/video/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </section>
   );
