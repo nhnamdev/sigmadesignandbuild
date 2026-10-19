@@ -30,10 +30,10 @@ export default function VideoSection() {
 
   return (
     <section className="section video-section">
-      <div className="container video-portrait-shell">
-        <div className="video-portrait-frame">
+      <div className="container video-frame-shell">
+        <div className="video-frame">
           <video ref={videoRef} controls muted playsInline preload="metadata">
-            <source src="/video/video2.mp4" type="video/mp4" />
+            <source src="/video/sigma-web.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

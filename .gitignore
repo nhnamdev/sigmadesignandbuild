@@ -3,3 +3,6 @@ dist
 .env
 .env.*
 !.env.example
+
+# Large raw video assets
+public/video/sigma.mp4
